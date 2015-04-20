@@ -8,7 +8,7 @@ if ENV['REDISTOGO_URL']
                                                            port: redis_uri.port,
                                                            password: redis_uri.password,
                                                            namespace: "sshare:sessions", :domain => '.herokuapp.com'
-                                                       }, expires_in: 60.days
+                                                       }, expires_in: 60.days, :domain => 'herokuapp.com'
   # elsif Rails.env.development?
 else
   Sshare.application.config.session_store :cookie_store, key: '_sshare_session'
