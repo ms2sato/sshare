@@ -43,6 +43,10 @@ group :production do
   gem 'rails_stdout_logging'
   # ログ保存先変更、静的アセット Heroku 向けに調整
   gem 'rails_12factor'
+
+  gem 'redis'
+  gem 'redis-store'
+  gem 'redis-rails'
 end
 
 
