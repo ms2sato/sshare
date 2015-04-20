@@ -12,7 +12,8 @@ class WelcomeController < ApplicationController
   def iframe
 
     if session[:test].nil?
-      session[:test] = 0
+      @test = 'セッションが取れません！'
+      return
     end
     @test = session[:test]
   end
