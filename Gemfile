@@ -46,8 +46,7 @@ group :production do
 
   gem 'redis'
   gem 'redis-store'
-  gem "redis-rails",                  '~> 4.0'
-  gem "redis-rack",                   github: "ScotterC/redis-rack", branch: 'rails-cookie-options'
+  gem "redis-rails"
 end
 
 
