@@ -7,7 +7,7 @@ if ENV['REDISTOGO_URL']
                                                            host: redis_uri.host,
                                                            port: redis_uri.port,
                                                            password: redis_uri.password,
-                                                           namespace: "sshare:sessions"
+                                                           namespace: "sshare:sessions", :domain => '.herokuapp.com'
                                                        }, expires_in: 60.days, :domain => '.herokuapp.com'
   # elsif Rails.env.development?
 else
